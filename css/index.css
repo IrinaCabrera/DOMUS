@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+.container-fluid, .row{
+    padding: 0%;
+    margin:0%;
+}
+
+.col{
+    background-color: #fbfaf9;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+
+}
+label{
+    padding-bottom: 1%;
+    font-size:large;
+    font-weight: 400;
+}
+h1,h3,h2,h4,h5,p, button, form, input{
+    width: auto;
+    height: auto; 
+}
+.iniciarSesion{
+    margin-top: 3%;
+}
+
+.mb-2{
+
+    padding-left: 30%;
+    padding-right: 20%;
+    padding-top: 2%;
+}
+.domus{
+    padding-top: 40%;
+    padding-left: 9%;
+}
+.domusTitulo{
+    padding-bottom: 8%;
+}
+.descripDomus{
+    font-weight: normal;
+    padding-bottom: 5%;
+}
+
+.btn-primary{
+    background-color: #3c56ba;
+    margin-left: 50%;
+}
+.image{
+    background-image: url("../img/casaInicio.jpg");
+    padding: 0%;
+}
+.verd{
+    background-color: #dcdcdc;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+
+}
+.oficinaVirtual{
+    padding-left: 42%;
+    padding-top: 32%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+    color: white;
+}
