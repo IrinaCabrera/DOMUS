@@ -1,4 +1,8 @@
-<?php include("./header.php");?>
+<?php 
+include("./header.php");
+include("./data_base.php")
+?>
+
 <link rel="stylesheet" href="../css/index.css">
 <script src="../js/index.js"></script>
 </head>
@@ -29,7 +33,9 @@
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                     <input type="password" class="form-control form-control-lg" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary iniciarSesion"> <a href="http://localhost/tpibd/components/indexSecretaria.php">INICIAR SESIÓN</a></button>
+                <button type="submit" class="btn btn-primary iniciarSesion" onclick="redireccionar()"> 
+                    <a id="redSecr" href="http://localhost/DOMUS/components/">INICIAR SESIÓN</a>
+                </button>
                 </form>
             </div>
         </div>
