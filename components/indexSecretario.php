@@ -33,9 +33,9 @@ include("./header.php");
   <div class="container-fluid">
     
     <ul class="navEsp">
-        <li class="navEspli"><a href="#">CLIENTES</a></li>
+        <li class="navEspli"><a href="http://localhost/DOMUS/components/Show_customers.php">CLIENTES</a></li>
         <li class="navEspli"><button class="btn" onclick="boton()"><a href="#">AGENDA</a></button></li>
-        <li class="navEspli"><a href="#">SOLICITUDES</a></li>
+        <li class="navEspli"><a href="./Acciones_agenda/Show_requests.php">SOLICITUDES</a></li>
         <li class="hoy">
           <script>
           devolverFecha();
@@ -51,11 +51,12 @@ include("./header.php");
             <ul class="ulNavBarVertical">
                 <li class="liNabBarVertical">
                     <button class ="btn" onclick="opcionesClientes()">
-                        <a class ="botoncito" id="btnAgendarCita"  href="#">AGENDAR CITA</a>
+                        <a class ="botoncito" id="btnAgendarCita"  
+                        href="#">AGENDAR CITA</a>
                     </button>
                     <button class ="btn">
                         <a class ="botoncito" id="btnMostrarAgenda"  
-                        href="http://localhost/DOMUS/components/agenda.php">MOSTRAR AGENDA</a>
+                        href="./Acciones_agenda/agenda.php">MOSTRAR AGENDA</a>
                     </button>
                 </li>
                 
@@ -93,20 +94,20 @@ include("./header.php");
                     <div class="container">
                         <h3>Cita Nuevo Cliente</h3>
                         
-                                <form>
+                                <form method="POST" action="./Acciones_agenda/Agregar_cita.php">
                                     <div class="container">
                                         <div class="row">
                                         <p>1. Complete los campos con los datos del cliente</p>
                                             <div class="col-sm-2">
-                                                    <input type="text" placeholder="Nombre" class="form-control form-control-sm" >
+                                                    <input type="text" placeholder="Nombre" class="form-control form-control-sm" name="data_name">
                                                     <label  class="form-label">Nombre de Usuario</label>
                                                 </div>
                                             <div class="col-sm-2">
-                                                    <input type="" placeholder="Teléfono" class="form-control form-control-sm" >
+                                                    <input type="" placeholder="Teléfono" class="form-control form-control-sm" name="data_phone">
                                                     <label  class="form-label">Teléfono</label>
                                             </div>
                                             <div class="col-sm-2">
-                                                <input type="email" placeholder="Email" class="form-control form-control-sm" >
+                                                <input type="email" placeholder="Email" class="form-control form-control-sm" name="data_email">
                                                 <label  class="form-label">Correo electrónico</label>
                                                     
                                             </div>
@@ -123,7 +124,7 @@ include("./header.php");
                                         <p>3. Seleccione un agente inmobiliario.</p>
                                             <div class="col col-sm-2"> 
                                             <label >Agente</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                <select class="form-control" name="exampleFormControlSelect1">
                                                 <option>Fulana</option>
                                                 <option>SultanoEjemplo</option>
                                                 <option>MasEjemplo</option>
@@ -131,7 +132,7 @@ include("./header.php");
                                             </div>
                                         <p>4. Ingrese un código de propiedad.</p>
                                         <div class="col col-sm-2"> 
-                                                <input type="text" placeholder="Propiedad" class="form-control form-control-sm" >
+                                                <input type="text" placeholder="Propiedad" class="form-control form-control-sm" name="data_prop">
                                                 <label  class="form-label">Propiedad</label>
                                             </div>
                                     </div>
