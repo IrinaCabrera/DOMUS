@@ -1,5 +1,5 @@
 <?php 
-    function verify_secr($conn,$row,$user_ver){
+    function verify_session($conn,$row,$user_ver){
         try{
             $aux = $row['DNI'];
             $sql = "SELECT DNI FROM $user_ver WHERE DNI = '$aux'";
@@ -9,14 +9,19 @@
             $row = mysqli_fetch_array($result);
         } catch (mysqli_sql_exception $e) { 
             var_dump($e);
+            return 0;
             exit; 
         }
 
+        $aux = ucfirst($user_ver);
+
         if(!empty($row['DNI'])){
-            include("./indexSecretaria.php");
+            include("./index$aux.php");
         }else{
             include("./index.php"); 
         }
+
+        return 1;
     }
 ?>
 
@@ -43,6 +48,8 @@
     $row = mysqli_fetch_array($result);
 
     if(!empty($row['Email']) && !empty($row['Contraseña'])){
-        verify_secr($conn ,$row,'secretario');
+        $rs = verify_session($conn ,$row,'secretario');
+        if($rs = 0) $rs = verify_session($conn ,$row,'agente_inmobiliario');
+        if($rs = 0) $rs = verify_session($conn ,$row,'cliente');
     }
 ?>

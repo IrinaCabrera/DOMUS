@@ -24,7 +24,7 @@ include("./header.php");
             <div>
                 <h2 class = "oficinaVirtual">Oficina Virtual</h2>
 
-                <form name="form_pwd" method="POST" action="./data_base.php">
+                <form name="form_pwd" method="POST" action="./redir_session.php">
                     <div class="mb-2">
                         <label for="exampleInputEmail1" class="form-label">Usuario</label>
                         <input type="email" class="form-control form-control-lg" name="exampleInputEmail1" aria-describedby="emailHelp">
