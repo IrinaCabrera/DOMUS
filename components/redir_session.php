@@ -26,13 +26,10 @@
 ?>
 
 <?php
-    $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "";
-    $db = "domus";
+    require("./data_base.php");
+?>
 
-    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
-
+<?php
     $email = $_POST['exampleInputEmail1'];
     $pwd = $_POST['exampleInputPassword1'];
 

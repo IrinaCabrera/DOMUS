@@ -50,8 +50,13 @@ include("./header.php");
             <div class="col una">
             <ul class="ulNavBarVertical">
                 <li class="liNabBarVertical">
-                    <button class ="btn" onclick="opcionesClientes()"><a class ="botoncito" id="btnAgendarCita"  href="#">AGENDAR CITA</a></button>
-                    <button class ="btn"><a class ="botoncito" id="btnMostrarAgenda"  href="#">MOSTRAR AGENDA</a></button>
+                    <button class ="btn" onclick="opcionesClientes()">
+                        <a class ="botoncito" id="btnAgendarCita"  href="#">AGENDAR CITA</a>
+                    </button>
+                    <button class ="btn">
+                        <a class ="botoncito" id="btnMostrarAgenda"  
+                        href="http://localhost/DOMUS/components/agenda.php">MOSTRAR AGENDA</a>
+                    </button>
                 </li>
                 
             </ul>
