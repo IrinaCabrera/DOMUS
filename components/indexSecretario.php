@@ -24,7 +24,9 @@ include("./header.php");
         <li class="ppalli"><a href="#"><img src="../img/maletin.png" alt=""  class="d-inline-block align-text-top "></a></li>
         <li class="ppalli"><a href="#"><img src="../img/maletin.png" alt=""  class="d-inline-block align-text-top "></a></li>
         <li class="ppalli">
-            <Button class="btn btn-primary salir">SALIR</Button>
+            <Button class="btn btn-primary salir">
+                <a href="http://localhost/DOMUS/components">SALIR</a> 
+            </Button>
         </li>
     </ul>
 </nav>

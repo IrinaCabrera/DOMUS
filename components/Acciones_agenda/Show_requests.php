@@ -1,5 +1,5 @@
 <?php
-    require('./data_base.php');
+    require('../data_base.php');
 ?>
 
 <?php
