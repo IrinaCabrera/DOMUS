@@ -36,7 +36,7 @@
             echo "</button>";
     
     
-            echo "<ul class='dropdown-menu' style='width: 95%;'>";
+            echo "<ul class='dropdown-menu dropdawnmenu'>";
             echo "<li style='padding-bottom:30px'>";
             echo "<div class='container-fluid' style='text-align:center;'>";
             echo "<div class='row' style='width: 100%'>";

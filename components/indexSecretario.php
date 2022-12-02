@@ -294,12 +294,27 @@ include("./header.php");
                                 </div>
 
                                 <div class="row" style="margin-top:2%;">
-                                    <div class="col-8">
+                                    <div class="col-6">
                                         <p>Actividades del día: <script>devolverFecha();</script></p>
                                     </div>
-                                    <div class="col-4">
-                                        <input type="date" id="start" name="trip-start" value="" class="form-control form-control-sm" >
-                                        <label  class="form-label">Busca por fecha</label>
+                                    <div class="col-6">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class ="col-9" >
+                                                    <input style="width:60%; float:right;" type="date" id="start" name="trip-start" value="" class="form-control form-control-sm" >
+                                                    <label  class="form-label">Busca por fecha:</label>
+                                                </div>
+                                                <div class ="col-3">
+                                                    <button class="btn btn-primary btnGeneral" ><a href="#" class="a-btnGeneral">Aceptar</a></button> 
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
+
+                                        
+                                       
                                     </div>
                                 
                                 </div>
@@ -317,18 +332,7 @@ include("./header.php");
                         </div>
                          <!--FINAL -> MOSTRAR AGENDA-->
 
-                  <!-- 
-
-                 <li class="navEspli"><a href="./Acciones_agenda/Show_requests.php">SOLICITUDES</a></li>
-
-                 LISTA DE SOLICITUDES
-                 -->
-                 
-
-
-                 <!--
-                 FIN -> LISTA DE SOLICITUDES
-                 -->
+                  <!-- LISTA DE SOLICITUDES -->
                         <div class="container mostrarSolicitudes" id="mostrarSolicitudes">
                             <div class="row" style="height:100%; width:100%;">
                                 <div class = "col">
@@ -375,6 +379,14 @@ include("./header.php");
                             </div>
 
                         </div>
+
+
+                 <!--FIN -> LISTA DE SOLICITUDES-->
+                       
+                 <!-- REGISTRAR CLIENTES -->
+
+                 <!--FIN -> REGISTRAR CLIENTES-->
+
 
 
 
