@@ -9,19 +9,15 @@
             $row = mysqli_fetch_array($result);
         } catch (mysqli_sql_exception $e) { 
             var_dump($e);
-            return 0;
             exit; 
         }
 
         $aux = ucfirst($user_ver);
 
         if(!empty($row['DNI'])){
-            include("./index$aux.php");
-        }else{
-            include("./index.php"); 
+            header("Location: http://localhost/DOMUS/components/index$aux.php");
+            exit;
         }
-
-        return 1;
     }
 ?>
 
@@ -45,8 +41,11 @@
     $row = mysqli_fetch_array($result);
 
     if(!empty($row['Email']) && !empty($row['Contraseña'])){
-        $rs = verify_session($conn ,$row,'secretario');
-        if($rs = 0) $rs = verify_session($conn ,$row,'agente_inmobiliario');
-        if($rs = 0) $rs = verify_session($conn ,$row,'cliente');
+        $rs = array("secretario","agente_inmobiliario","cliente");
+        for($i = 0; $i < count($rs); $i++){
+            verify_session($conn,$row,$rs[$i]);
+        }
+    }else{
+        header("Location: http://localhost/DOMUS/components/");
     }
 ?>
