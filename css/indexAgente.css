@@ -149,9 +149,7 @@ li.liNabBarVertical{
 .mensajes {
 	height: auto;
 }
-.btnDropDawnAgenda{
-    width: 100%;
-}
+
 .imgFlecha{
     width:22px;
     height:17px;
@@ -164,5 +162,5 @@ li.liNabBarVertical{
     width: 100%;
 }
 ul.dropdawnmenu{
-    width:44%;
+    width:796px;
 }

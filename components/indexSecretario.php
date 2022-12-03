@@ -284,52 +284,46 @@ include("./header.php");
 
                     <!-- MOSTRAR AGENDA -->
                     
-                <div class="container-flid colMostrarAgenda contenidoFormulario" id="MostrarAgenda">
-                    <div class="row">
-                        <div class="col">
-                        
-                            <div class="container-fluid ">
-                                <div class="row" style="margin-top:2%;">
-                                    <h3>Agenda</h3>
-                                </div>
+                
+                <div class="container contenedorFormulario colMostrarAgenda" id= "MostrarAgenda">
+                    <div class="row expandido">
+                        <div class="col expandido colContFormulario" >
 
-                                <div class="row" style="margin-top:2%;">
-                                    <div class="col-6">
-                                        <p>Actividades del día: <script>devolverFecha();</script></p>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class ="col-9" >
-                                                    <input style="width:60%; float:right;" type="date" id="start" name="trip-start" value="" class="form-control form-control-sm" >
-                                                    <label  class="form-label">Busca por fecha:</label>
-                                                </div>
-                                                <div class ="col-3">
-                                                    <button class="btn btn-primary btnGeneral" ><a href="#" class="a-btnGeneral">Aceptar</a></button> 
-                                                </div>
-
-                                            </div>
-
+                            <div class= "container expandido">
+                                <div class="row expandido">
+                                    <div class="col-4 expandido">
+                                        <h1 style="margin: 3%;"> Agenda</h1>
+                                        <h5 style="magin-bottom: 2%; margin-top: 8%;">Actividades del día: <script>devolverFecha();</script></h5>
+                                        
+                                        <div>
+                                            <input style="magin-bottom: 2%; margin-top: 5%; width:80%;" type="date" id="start" name="trip-start"
+                                                value="" class="form-control form-control-sm" >
+                                            <label  class="form-label">Fecha</label>
+                                        </div>
+                                        <div style="margin-top:3%;">
+                                        <button class="btn btn-primary btnGeneral" ><a href="#" class="a-btnGeneral">Aceptar</a></button> 
                                         </div>
                                         
-
-                                        
-                                       
                                     </div>
-                                
-                                </div>
-
-                                <div class="row" style="margin-top:2%">
-                                    <div class="global">
-                                        <div class="mensajes">
-                                                <?php
-                                                    require("./Acciones_agenda/agenda.php"); 
-                                                ?>
+                                    <div class="col-8 expandido">
+                                        
+                                        <h5 style="magin-bottom: 1%; margin-top: 11.5%;">Programadas</h5>
+                                        <div class="global" style="margin-top:2%;">
+                                            <div class="mensajes">
+                                                    <?php
+                                                        require("./Acciones_agenda/agenda.php"); 
+                                                    ?>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
+
                         </div>
+                    </div>
+                    
+                </div>
                          <!--FINAL -> MOSTRAR AGENDA-->
 
                   <!-- LISTA DE SOLICITUDES -->
