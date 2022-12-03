@@ -1,0 +1,166 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+nav.navbar.ppal{
+    background-color: #3c56ba;
+    box-shadow: -4px 21px 49px 5px rgba(0,0,0,0.7);
+    -webkit-box-shadow: -4px 21px 49px 5px rgba(0,0,0,0.7);
+    -moz-box-shadow: -4px 21px 49px 5px rgba(0,0,0,0.7);
+    height: 65px;
+}
+a.navbar-brand{
+    color:white;
+    font-weight: 500;
+    margin-left: 3%;
+    
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand:visited{
+    color: white;
+}
+
+ul.ulppal {
+    list-style-type: none;
+    float: right;
+    width: 25%;
+    margin-bottom: 1px;
+    
+}
+li.ppalli {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+button.btn.btn-primary.salir, .btnRosa {
+    background-color:#ff1d54;
+    border-color: #ff1d54;
+    border-style:none;
+}
+
+ul.ulNavBarVertical{
+    padding-top: 30%;
+    margin-left: 12%;
+}
+li.liNabBarVertical{
+    display: block;
+    margin-bottom: 15%;
+
+}
+.a-btnGeneral{
+    color:white;
+}
+.a-btnGeneral:hover{
+    color:white;
+}
+.btnGeneral{
+    background-color: #3c56ba;
+}
+
+.imgMaletin{
+    width: 30px;
+}
+nav.especial{
+    height: px;
+    background-color: #fbfaf9;
+    height: 65px;
+    -webkit-box-shadow: -1px 13px 46px -1px rgba(138,138,138,1);
+    -moz-box-shadow: -1px 13px 46px -1px rgba(138,138,138,1);
+    box-shadow: -1px 13px 46px -1px rgba(138,138,138,1);
+}
+
+ul.navEsp {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    margin-left: 3%;
+    
+}
+li.navEspli {
+    display: inline;
+    margin-right: 3%;
+    
+}
+li.navEspli.hoy{
+    float:right;
+}
+.hoy{
+    float:right;
+    margin-right: 3%;
+}
+/**/
+
+.expandido{
+    height: 100%;
+}
+.una{
+    background-color: #fbfaf9;
+    box-shadow: 4px -1px 5px 0px rgba(97,89,89,0.75);
+    -webkit-box-shadow: 4px -1px 5px 0px rgba(97,89,89,0.75);
+    -moz-box-shadow: 4px -1px 5px 0px rgba(97,89,89,0.75);
+}
+a{
+    text-decoration: none;
+    
+}
+ul.ulNavBarVertical{
+    padding-top: 30%;
+    margin-left: 12%;
+}
+li.liNabBarVertical{
+    display: block;
+    margin-bottom: 15%;
+
+}
+/*//////////-----------//////////*/
+.btnAgendaVertical, .contendorAgenda{
+    display: none;
+}
+
+.contenedorFormulario{
+    width: 90%;
+    height: 78%;
+    margin-top: 2%;
+    box-shadow: 1px -1px 40px 7px rgba(97,89,89,0.75);
+    -webkit-box-shadow: 1px -1px 40px 7px rgba(97,89,89,0.75);
+    -moz-box-shadow: 1px -1px 40px 7px rgba(97,89,89,0.75);
+    
+}
+.colContFormulario{
+    padding:2%;
+}
+.global {
+	height: 400px;
+	width: 100%;
+    padding: 0%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+.mensajes {
+	height: auto;
+}
+
+.imgFlecha{
+    width:22px;
+    height:17px;
+}
+.texto {
+	padding:4px;
+	background:#fff;
+}
+.btnDropDawnAgenda{
+    width: 100%;
+}
+ul.dropdawnmenu{
+    width:796px;
+}
