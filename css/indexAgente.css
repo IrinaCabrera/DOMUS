@@ -122,7 +122,7 @@ li.liNabBarVertical{
 
 }
 /*//////////-----------//////////*/
-.btnAgendaVertical, .contendorAgenda{
+.btnAgendaVertical, .contendorAgenda, .mostrarCatalogoPropiedad, .btnPropiedadesVertical{
     display: none;
 }
 
@@ -163,4 +163,7 @@ li.liNabBarVertical{
 }
 ul.dropdawnmenu{
     width:796px;
+}
+.dropdawnPropiedad{
+    width: 340px;
 }

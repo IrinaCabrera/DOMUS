@@ -43,7 +43,7 @@ include("./header.php");
     
     <ul class="navEsp">
         <li class="navEspli"><button class="btn" onclick="mostrarBtnAgendaVertical()"><a href="#">AGENDA</a></button></li>
-        <li class="navEspli"><button class="btn" onclick=""><a href="#">PROPIEDADES</a></button></li>
+        <li class="navEspli"><button class="btn" onclick="verbtnPropiedadesVertical()"><a href="#">PROPIEDADES</a></button></li>
         
         <li class="hoy">
           <script>
@@ -68,6 +68,12 @@ include("./header.php");
                             <button class ="btn" onclick="mostrarFormAgenda()">
                                 <a class ="btnAgendaVertical" id="btnAgendaVertical"  
                                 href="#">AGENDA</a>
+                            </button>
+                        </li>
+                        <li class="liNabBarVertical">
+                            <button class ="btn" onclick="mostrarCatalogo()">
+                                <a class ="btnPropiedadesVertical" id="btnPropiedadesVertical"  
+                                href="#">VER PROPIEDADES</a>
                             </button>
                         </li>
                     </ul>
@@ -120,9 +126,33 @@ include("./header.php");
                     </div>
                 </div>
             </div>
+        <!-- FIN -> MOSTRAR AGENDA -->
+
+        <!-- MOSTRAR CATALOGO -->
+        <div class="container-fluid mostrarCatalogoPropiedad " id="mostrarCatalogoPropiedad" style="margin-top:5%;">
+            <div class="px-lg-5">
+
+                <div class="row">
+                <?php
+                include("Propiedades/Show_prop.php");
+                ?>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+               
+
+
+        <!-- FIN -> MOSTRAR CATALOGO -->
+        
+
 
         </div>
-        <!-- FIN -> MOSTRAR AGENDA -->
+        
+        
 
     </div>
 
