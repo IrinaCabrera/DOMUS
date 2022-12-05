@@ -106,7 +106,7 @@ include("./header.php");
             <div class="container-fluid formContacto " id="formContacto">
                 <div class="row expandido rounded ">
                     <div class ="col expandido" style="padding:0%;;">
-                        <form action="" >
+                        <form method='POST' action="./Acciones_agenda/Create_request.php" >
 
                             <div class="container">
                                 <div class="row d-flex flex-row justify-content-center alig-items-center bordeForm border border-1">
@@ -114,24 +114,24 @@ include("./header.php");
                                     <h2>Contactanos</h2>
 
                                     <div class="col-6" style="margin-top:2%;">
-                                        <input type="text" placeholder="Nombre" class="form-control form-control-sm" name="">
+                                        <input type="text" placeholder="Nombre" class="form-control form-control-sm" name="FirstName">
                                         <label  class="form-label">Nombre</label>
                                     </div>
                                     <div class="col-6" style="margin-top:2%; margin-bottom:3%;">
-                                        <input type="text" placeholder="Apellido" class="form-control form-control-sm" name="">
+                                        <input type="text" placeholder="Apellido" class="form-control form-control-sm" name="LastName">
                                         <label  class="form-label">Apellido</label>
                                     </div>
                                     <div class="col-6" style="margin-top:2%; margin-bottom:3%;">
-                                        <input type="text" placeholder="Email" class="form-control form-control-sm" name="">
+                                        <input type="text" placeholder="Email" class="form-control form-control-sm" name="Email">
                                         <label  class="form-label">Email</label>
                                     </div>
                                     <div class="col-6" style="margin-top:2%; margin-bottom:3%;">
-                                        <input type="text" placeholder="Teléfono" class="form-control form-control-sm" name="">
+                                        <input type="text" placeholder="Teléfono" class="form-control form-control-sm" name="Phone">
                                         <label  class="form-label">Teléfono</label>
                                     </div>
 
                                     <div class="col-12" style="margin-top:2%; margin-bottom:3%;">
-                                        <textarea style="height:200px" class="form-control textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Asunto"></textarea>
+                                        <textarea style="height:200px" class="form-control textarea" id="exampleFormControlTextarea1" name="Asunto" rows="3" placeholder="Asunto"></textarea>
                                         <label  class="form-label">Asunto</label>
                                     </div>
 

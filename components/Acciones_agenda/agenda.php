@@ -16,9 +16,11 @@
     }else{
         try{
             $date = $_POST['date_name'];
+            $newDate = date("Y-m-d",strtotime($date));
+
             $sql = "SELECT Estado, Fecha, Hora, Titulo 
                     FROM evento
-                    WHERE Fecha = $date";
+                    WHERE Fecha = $newDate";
 
             $result = mysqli_query($conn, $sql);
 

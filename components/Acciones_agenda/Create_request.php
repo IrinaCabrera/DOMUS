@@ -3,13 +3,13 @@
 ?>
 
 <?php
-    $asunto = $_POST[''];
+    $asunto = $_POST['Asunto'];
     $dni = $_POST[''];
-    $name = $_POST[''];
-    $phone = $_POST[''];
-    $mail = $_POST[''];
-    $hour = $_POST[''];
-    $date = $_POST['']; 
+    $name = $_POST['FirstName'];
+    $phone = $_POST['Phone'];
+    $mail = $_POST['Email'];
+    $hour = date("h:i:sa");
+    $date = date("Y-m-d");
 
 
     $sql = "INSERT INTO solicitud(Asunto,DNI_cliente,Nombre_cl,Telefono,Email,Hora,Fecha) 
