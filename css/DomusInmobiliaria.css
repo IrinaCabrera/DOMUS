@@ -1,0 +1,91 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+nav.navbar.ppal{
+    background-color: #3c56ba;
+    height: 65px;
+}
+a.navbar-brand{
+    color:white;
+    font-weight: 500;
+    margin-left: 3%;
+    
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand:visited{
+    color: white;
+}
+
+.a-btnGeneral{
+    color:white;
+}
+.a-btnGeneral:hover{
+    color:white;
+}
+.btnGeneral{
+    background-color: #3c56ba;
+}
+
+.expandido{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    
+}
+/**/
+.ulNav{
+    margin-left: 35%;
+}
+.navitemcenter{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    
+}
+.naviteminiciarsesion{
+    color: white;
+    
+}
+
+.navitemcenter:hover, .navitemcenter:visited, .navitemcenter:active , .navitemcenter:focus,
+
+.naviteminiciarsesion:hover, .naviteminiciarsesion:visited, .naviteminiciarsesion:active , .naviteminiciarsesion:focus{
+    font-weight: bold;
+    color: white;
+
+}
+
+.catalogoPropiedades, .formContacto{
+    display: none;
+}
+.formContacto{
+    width:50%; 
+    height: 80%;
+    padding:4%;
+    margin-right: 25%;
+}
+.bordeForm{
+    border-style: solid;
+    border-radius: 1px;
+    border-color: grey;
+    border-style:solid;
+    padding: 5%;
+}
+.contenedorCarousel{
+    display: block;
+}
+
+
+.form-control{
+    height: 43px;
+}
