@@ -291,20 +291,22 @@ include("./header.php");
 
                             <div class= "container expandido">
                                 <div class="row expandido">
-                                    <div class="col-4 expandido">
-                                        <h1 style="margin: 3%;"> Agenda</h1>
-                                        <h5 style="magin-bottom: 2%; margin-top: 8%;">Actividades del día: <script>devolverFecha();</script></h5>
-                                        
-                                        <div>
-                                            <input style="magin-bottom: 2%; margin-top: 5%; width:80%;" type="date" id="start" name="trip-start"
-                                                value="" class="form-control form-control-sm" >
-                                            <label  class="form-label">Fecha</label>
+                                    <form method='GET' action="./search_calendar.php">
+                                        <div class="col-4 expandido">
+                                            <h1 style="margin: 3%;"> Agenda</h1>
+                                            <h5 style="magin-bottom: 2%; margin-top: 8%;">
+                                                Actividades del día: <script>devolverFecha();</script></h5>
+                                                
+                                            <div>
+                                                <input style="magin-bottom: 2%; margin-top: 5%; width:80%;" type="date" id="start" name="trip-start"
+                                                    value="" class="form-control form-control-sm" >
+                                                <label  class="form-label">Fecha</label>
+                                            </div>
+                                            <div style="margin-top:3%;">
+                                                <button class="btn btn-primary btnGeneral">Aceptar</button> 
+                                            </div>
                                         </div>
-                                        <div style="margin-top:3%;">
-                                        <button class="btn btn-primary btnGeneral" ><a href="#" class="a-btnGeneral">Aceptar</a></button> 
-                                        </div>
-                                        
-                                    </div>
+                                    </form>
                                     <div class="col-8 expandido">
                                         
                                         <h5 style="magin-bottom: 1%; margin-top: 11.5%;">Programadas</h5>
@@ -337,21 +339,6 @@ include("./header.php");
                                             <div class="texto">
                                                 <table class="table">
                                                 <thead>
-                                                    <!--deberia mostrar esto
-                                                
-                                                    <tr>
-                                                    <th scope="col">Nombre</th>
-                                                    <th scope="col">Asunto</th>
-                                                    <th scope="col">fecha</th>
-                                                    <th scope="col">hora</th>
-                                                    <th scope="col">Teléfono</th>
-                                                    <th scope="col">Email</th>
-                                                    <th scope="col">Edad</th> se puede quitar este
-                                                    </tr>
-                                                
-                                                
-                                                    -->
-
                                                     <tr>
                                                     <th scope="col-5">Asunto</th>
                                                     <th scope="col-3">DNI</th>

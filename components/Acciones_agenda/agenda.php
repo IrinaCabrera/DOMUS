@@ -1,20 +1,21 @@
 <?php
     require('./data_base.php');
+    require('./search_calendar.php');
 ?>
 
 <?php
-    try{
+    if($sql === 0) try{
         $sql = "SELECT Estado, Fecha, Hora, Titulo FROM evento";
 
         $result = mysqli_query($conn, $sql);
+
     } catch (mysqli_sql_exception $e) { 
         var_dump($e);
         exit; 
     }
+    
 
     while($row = mysqli_fetch_assoc($result)){
-        
-       
 
         echo"<div class='texto'>";
             echo "<div class='' style='width: 100%;'>";
