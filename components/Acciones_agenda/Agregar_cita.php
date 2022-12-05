@@ -8,7 +8,7 @@
 
     $status = "pendiente";
     $date = $_POST['date_start'];
-    //$secr = $_POST[''];
+    $secr = $_SESSION['Nombre'];
     $time = $_POST['time_start'];
     //$title = $_POST[''];
     //$asunto = $_POST[''];

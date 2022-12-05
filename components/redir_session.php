@@ -30,7 +30,7 @@
     $pwd = $_POST['exampleInputPassword1'];
 
     try{
-        $sql = "SELECT Email, Contraseña, DNI FROM usuario WHERE Email = '$email' AND Contraseña = '$pwd' ";
+        $sql = "SELECT Nombre, Apellido, Email, Contraseña, DNI FROM usuario WHERE Email = '$email' AND Contraseña = '$pwd' ";
 
         $result = mysqli_query($conn, $sql);
     } catch (mysqli_sql_exception $e) { 
@@ -45,6 +45,12 @@
         for($i = 0; $i < count($rs); $i++){
             verify_session($conn,$row,$rs[$i]);
         }
+
+        $_SESSION['Nombre'] = $row['Nombre'];
+        $_SESSION['Apellido'] = $row['Apellido'];
+        $_SESSION['Email'] = $row['Email'];
+        $_SESSION['Contraseña'] = $row['Contraseña'];
+        $_SESSION['DNI'] = $row['DNI'];
     }else{
         header("Location: http://localhost/DOMUS/components/");
     }

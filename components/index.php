@@ -18,7 +18,7 @@ include("./header.php");
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulNav">
         <li class="nav-item ">
-        <button class="btnGeneral" style="border-style:none;"><a class="nav-link navitemcenter" aria-current="page" href="http://localhost/DOMUS/components/DomusInmobiliaria.php">INICIO</a></button>
+        <button class="btnGeneral" style="border-style:none;"><a class="nav-link navitemcenter" aria-current="page" href="http://localhost/DOMUS/components/index.php">INICIO</a></button>
         </li>
         <li class="nav-item ">
           <button class="btnGeneral" onclick=" verCatalogo()" style="border-style:none;"><a class="nav-link navitemcenter" aria-current="page" href="#">CATALOGO</a></button>
@@ -29,7 +29,7 @@ include("./header.php");
       </ul>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulNav">
         <li class="nav-item ">
-            <a class="nav-link naviteminiciarsesion" href="http://localhost/DOMUS/components/index.php">Iniciar Sesión</a>
+            <a class="nav-link naviteminiciarsesion" href="http://localhost/DOMUS/components/indexSession.php">Iniciar Sesión</a>
         </li>
       </ul>
     </div>
@@ -136,7 +136,9 @@ include("./header.php");
                                     </div>
 
                                     
-                                    <button style="width:15%; height: 3%; margin-top:1%; margin-left:1%;"  class="btn btn-primary btnGeneral"> <a href="#" class="a-btnGeneral">ENVIAR</a></button>
+                                    <button style="width:15%; height: 3%; margin-top:1%; margin-left:1%;"  class="btn btn-primary btnGeneral"> 
+                                        <a href="#" class="a-btnGeneral">ENVIAR</a>
+                                    </button>
                                     
                                 </div>
                             </div>
