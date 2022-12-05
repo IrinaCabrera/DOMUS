@@ -214,7 +214,7 @@ include("./header.php");
                 <div class="container agendarCitaClienteEmpresa" id="agendarCitaClienteEmpresa">
                     <div class="col formularioCliente" >
                         <div class="container contenedorInternoCliente" >
-                            <h3 style="padding-bottom:2%;">Cita Nuevo Cliente</h3>
+                            <h3 style="padding-bottom:2%;">Cita Cliente Empresa</h3>
                     
                             <form method="POST" action="./Acciones_agenda/Agregar_cita.php">
                                 <div class="container contenidoFormulario">
