@@ -237,7 +237,7 @@ include("./header.php");
                                     <p>2. Seleccione un dia y un horario para la cita.</p>
                                     <div class="row">
                                         <div class="col col-sm-2">
-                                        <input type="date" id="start" name="trip-start"
+                                        <input type="date" id="start" name="date_start"
                                             value="" class="form-control form-control-sm" >
                                             <label  class="form-label">Fecha</label>
 
@@ -245,7 +245,7 @@ include("./header.php");
                                         
 
                                         <div class="col col-sm-2" style="margin-left:2%;">
-                                        <input type="time" id="start" name="trip-start"
+                                        <input type="time" id="start" name="time_start"
                                             value="" class="form-control form-control-sm">
                                             <label  class="form-label">Hora</label>
                                         </div>
@@ -291,14 +291,14 @@ include("./header.php");
 
                             <div class= "container expandido">
                                 <div class="row expandido">
-                                    <form method='GET' action="./search_calendar.php">
+                                    <form method='GET' action="./Acciones_agenda/agenda.php">
                                         <div class="col-4 expandido">
                                             <h1 style="margin: 3%;"> Agenda</h1>
                                             <h5 style="magin-bottom: 2%; margin-top: 8%;">
                                                 Actividades del día: <script>devolverFecha();</script></h5>
                                                 
                                             <div>
-                                                <input style="magin-bottom: 2%; margin-top: 5%; width:80%;" type="date" id="start" name="trip-start"
+                                                <input style="magin-bottom: 2%; margin-top: 5%; width:80%;" type="date" id="start" name="date_name"
                                                     value="" class="form-control form-control-sm" >
                                                 <label  class="form-label">Fecha</label>
                                             </div>

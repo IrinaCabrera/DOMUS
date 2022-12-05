@@ -6,19 +6,20 @@
     $name_customer = $_POST['data_name'];
     $phone_customer = $_POST['data_phone'];
 
-    $status = $_POST[''];
-    $date = $_POST[''];
-    $secr = $_POST[''];
-    $time = $_POST[''];
-    $title = $_POST[''];
-    $asunto = $_POST[''];
+    $status = "pendiente";
+    $date = $_POST['date_start'];
+    //$secr = $_POST[''];
+    $time = $_POST['time_start'];
+    //$title = $_POST[''];
+    //$asunto = $_POST[''];
+    //$dni = $_POST[''];
 
     $agent = $_POST['exampleFormControlSelect1'];
     $prop = $_POST['data_prop'];
 
     //save a event
-    $sql = "INSERT INTO evento (Id_evento, Estado, Fecha, Hora, Titulo, Asunto) 
-            VALUES (NULL, $status, $date, $time, $title, $Asunto)";
+    $sql = "INSERT INTO evento (Id_evento, Estado, DNI_cliente, Fecha, Hora, Titulo, Asunto) 
+            VALUES (NULL, $status, $date, $dni, $time, $title, $Asunto)";
 
     mysqli_query($conn, $sql);
 

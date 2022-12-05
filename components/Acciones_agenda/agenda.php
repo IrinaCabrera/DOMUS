@@ -1,22 +1,35 @@
 <?php
-    require('./data_base.php');
-    require('./search_calendar.php');
+    require('../data_base.php');
 ?>
 
 <?php
-    if($sql === 0) try{
-        $sql = "SELECT Estado, Fecha, Hora, Titulo FROM evento";
+    if(empty($_POST['date_name'])){
+        try{
+            $sql = "SELECT Estado, Fecha, Hora, Titulo FROM evento";
 
-        $result = mysqli_query($conn, $sql);
+            $result = mysqli_query($conn, $sql);
 
-    } catch (mysqli_sql_exception $e) { 
-        var_dump($e);
-        exit; 
+        } catch (mysqli_sql_exception $e) { 
+            var_dump($e);
+            exit; 
+        }
+    }else{
+        try{
+            $date = $_POST['date_name'];
+            $sql = "SELECT Estado, Fecha, Hora, Titulo 
+                    FROM evento
+                    WHERE Fecha = $date";
+
+            $result = mysqli_query($conn, $sql);
+
+        } catch (mysqli_sql_exception $e) { 
+            var_dump($e);
+            exit; 
+        }
     }
     
 
     while($row = mysqli_fetch_assoc($result)){
-
         echo"<div class='texto'>";
             echo "<div class='' style='width: 100%;'>";
     
